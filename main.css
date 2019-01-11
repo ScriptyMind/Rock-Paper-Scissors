@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #343d46;
+}
+
+header {
+    width: 100%;
+    border-bottom: 2px solid #f6cd61;
+    background-color: white;
+}
+
+header h1 {
+    padding: 15px;
+    text-align: center;
+    color: #f6cd61; /*#4a4e4d*/
+    font-family: 'Pacifico', cursive;
+    
+}
+
+.score-board {
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid #f6cd61;
+    border-radius: 5px;
+}
+
+.score-board div {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 3px;
+    color: white;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.player {
+    border-right: 2px solid #f6cd61;
+}
+
+.computer {
+    border-left: 2px solid #f6cd61;
+}
+
+.phrase {
+    text-align: center;
+    color: white;
+    font-family: 'Pacifico';
+}
+
+.choices {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.choices div img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 4px 4px #5e5e5e;
+    transition: 0.3s ease;
+}
+
+.choices div {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.choices div img:hover {
+    cursor: pointer;
+    border-color: #5e5e5e;
+}
+
+.win {
+    border-color: #4dcc7c !important;
+    box-shadow: 4px 4px #31b43a !important;
+}
+
+.loss {
+    border-color: #fc121b !important;
+    box-shadow: 4px 4px #d01115 !important;
+}
+
+.draw {
+    border-color: #464647 !important;
+    box-shadow: 4px 4px #25292b !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
