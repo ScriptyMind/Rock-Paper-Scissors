@@ -2,6 +2,8 @@
 var UserScore_var = 0;
 var RowCount_var = 0;
 var CompScore_var = 0;
+var winSound = new Audio('Sounds/win.wav');
+var loseSound = new Audio("Sounds/lose.wav");
 
 // Dumps
 var UserScore_h1 = document.getElementById("UserScore");
@@ -26,6 +28,8 @@ function getChoiceName(letter) {
 
 // functions to get scores
 function win(UserChoice, CompChoice) {
+    winSound.currentTime = 0;
+    winSound.play();
     UserScore_var++;
     Statement_h1.innerHTML = getChoiceName(UserChoice) + " Beats " + getChoiceName(CompChoice) + ", You Win !";
     UserScore_h1.innerHTML = UserScore_var;
@@ -37,6 +41,8 @@ function win(UserChoice, CompChoice) {
 
 function loss(UserChoice, CompChoice) {
     CompScore_var++;
+    loseSound.currentTime = 0;
+    loseSound.play();
     Statement_h1.innerHTML = getChoiceName(CompChoice) + " Beats " + getChoiceName(UserChoice) + ", You Loss !";
     CompScore_h1.innerHTML = CompScore_var;
     document.getElementById(getChoiceName(UserChoice).toLowerCase()).classList.add("loss");
